@@ -1,0 +1,19 @@
+newmtl Carbon Fiber
+illum 7
+Kd 0.5 0.5 0.5
+adobe_interior_color 1 1 1
+Ni 1.5
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 1 1 1
+map_Pm Pod/Carbon Fiber_metallic.png
+adobe_translucence 0
+map_Pr Pod/Carbon Fiber_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd Pod/Carbon Fiber_base_color.png
+norm Pod/Carbon Fiber_normal.png
+disp Pod/Carbon Fiber_height.png
