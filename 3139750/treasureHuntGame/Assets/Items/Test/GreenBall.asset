@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3948720a0560b5445aeafc80cad81dd6, type: 3}
+  m_Name: GreenBall
+  m_EditorClassIdentifier: 
+  id: 1
+  itemName: Green Ball
+  icon: {fileID: 21300000, guid: 00dcfd6f875283841b37421108772fa5, type: 3}
+  prefab: {fileID: 3026150972199676479, guid: dee65afdb60b57446a95e09f56c71002, type: 3}
