@@ -1,0 +1,22 @@
+
+FORMATTING: MM/DD/YYYY
+
+
+
+
+
+
+
+
+
+
+03/15/2022
+I wanted to create a C# Script that would connect my "PlayerMoney" script to my new script "Navigate2Menu". At first, I tried using an if statement that would track the "money" int value in "PlayerMoney" but that didn't work. Instead, using the "GetComponent" function to fetch the "PlayerMoney" script in combination with a new variable "MoneyAvailable" which was made to follow the "money" int (except this time it was private) and store it's value in the game memory.
+
+03/15/2022
+When the scene was switched in-game from "ColorSwitching" to the "Jukebox" menu, the cursor would not maintain its visibility upon switching. This was different to opening the raw scene from the Assets folder of the project. Therefore, I used a C# Script to unlock the cursor as long as the scene is active. This was achieved using 2 lines within the Update function: "Cursor.visible = true;" and "Cursor.lockState = CursorLockMode.None;". After this, the cursor was visible after switching scenes but not in the 1st scene as intended.
+
+03/15/2022
+When creating the script for switching between 3 colors, the "GenerateAColor" function included the "Random.Range" array. Because I had 3 colors, I assumed each color between Red, Blue & Yellow would be mapped to 0, 1 and 2 respectively. However, only Red & Blue would show. So the script was "int RandomNumber = Random.Range(0, 2);. Upon realizing this, I tried "int RandomNumber = Random.Range(0, 3);" instead. This worked, as the last number in an array is always exclusive. This means, it won't assign anything to the "3" in the script because it's the last number.
+Once I tried this, all 3 colors worked as intended.
+

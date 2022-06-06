@@ -1,0 +1,7 @@
+This project combines 3 of the packages (ColorSwitching, 2D Jukebox Menu & MoneySystemPackage) into a single functional minigame in the scene "Kasim Estwick - Multiple Packages + LinkScripts"
+There are 2 separate C# scripts, named "CursorVisible" & "Navigate2Menu" are meant to link these packages together and are not used in the original 3 packages.
+
+Please add the "2D Jukebox Menu" to Unity's build settings before opening "Kasim Estwick - Multiple Packages + LinkScripts". This is to allow the game to transition into a different scene.
+Head to "File" and select the 3rd lowest option "Build Settings". Then, drag the "2D Jukebox Menu" scene located in the "Scenes" folder into the window.
+
+To see how it should look, paste this into a browser: https://pasteboard.co/BCk2QzDPkpb5.png
