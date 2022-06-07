@@ -1,0 +1,135 @@
+Game Programming Documnetation
+
+08/02/22
+
+Package 1
+
+ROLL AND BOUNCE A BALL 
+
+Tutorial: https://www.youtube.com/watch?v=BwPT7huwjn4&t=430s 
+
+Today I will be working on adding some basic plane and ball in my scene where i add rigidbody and box colliders to the mesh and texture them later on.
+
+First thing we have to start off with is adding a plane to the scene then reset the transformation and place the Y value of position to (-5). Then we add a sphere and rest the position like the plane.    
+
+Once we add the material to the floor and ball, we then start by adding gravity to the ball by adding a rigidbody component to it. once you play the scene you can see that the ball falls to the floor just like how gravity would react to a ball floating in air. 
+
+Now we add a C# script called PlayerController and attach it to the ball object. In the script itself add a public variable for rigidbody, then go back to the scene and attache the rigibody component to the rb variable on the script component, or you can change the ""void Start ()"" to ""Void Awake ()"" and write ""rb = GetComponent<Rigidbody>();"" to the the exact thing i mentioned perviously. 
+
+Next step is to add another public variable for the movement speed and give it a value of 10f, afterwards create three methods that would help for the scene to run, first one is "private void ProcessInputs()" & the second method is "private void Move()" third one is ""private void FixedUpdate()"".
+
+We add more variable to the code such as "private float xInput;" & "private float yInput;". Once the variable have been written we then Write ""xInput = Input.GetAxis("Horizontal");"" & ""zInput = Input.GetAxis("Vertical");"". in our update method we add ""ProcessInputs();"" 
+
+Inside the Move method we add a script to add force to the ball ""rb.AddForce(new Vector3(xInput, 0f, zInput) * moveSpeed);"" so from this script the ball would be moving on the xAxis & zAxis. then inside the FixedUpdate method we add ""Move();"" to make the ball move around a plane.
+
+once everything fulled worked and you can move the ball with force i then added a physics material to the ball added bouncy values and made sure the bounce combine is at maximum, then i added the Physics material to the Sphere collider material variable to detect it in the scene. 
+
+
+Another addition that can help out the package is to be able to rotate the camera angles with the mouse, to do se we create a new script and name it ""CameraAnlge"", we create variable for horizontal and vertical speed for the mouse, and the update method you say ""yaw += speedH * Input.GetAxis("Mouse X");"" & ""pitch -= speedV * Input.GetAxis("Mouse Y");"" and then you transform them by using eulerAngles like this: ""transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);"" once you done all of that attach the script to the Main Camera in the hiereacy. 
+
+
+15/02/22
+
+Package 2
+
+Grab & Throw
+
+Tutorial: https://www.youtube.com/watch?v=Xv-c3-IOnM0 (Failed script) 
+https://www.youtube.com/watch?v=_xMhkK6GTXA&t=160s (Working)
+
+In this package we will implement a pickup and throw script that could be used for different variation of games, 
+
+First, we create a plane with some cubes and a sphere, Plane being the floor, Cubes being the objects to pick up and throw and the sphere will act as a rock for this package. 
+
+We create a script were we add a ""Player"", ""Playercam"", ""ThrowForce"", ""hasPlayer"" boolean & ""beingCarried"" as well, ""Audioclip"" and ""audioSource"" variables are included as well.
+we create a public variable naming it ""dmg"" and a private bool ""touched"" stating ""false"". 
+
+In the Start function we just create a component to get the audio source to function within the scene. 
+
+In the update function we create a distance float where we check the distance between the gameobject we want to pick up and the player as well. if the distance is less than equals to 2.5 , we create a ""GetMouseButtonDown(0)"" input to were the player states as true if not then false, if the distance is true we create an input button ""Use"", we create a ""GetComponent<rigidbody>"" which states as being ""true"",the "transform.parent"" is equal to the ""PlayerCam"", then ""bringCarried" states as true.
+
+""beingCarried"" if it states as being ""touched"" the the rigidbody stated as before would be ""false"" then the ""transform.parent"" is ""null"" then this means that the ""beingCarried"" equals to ""false"", we then add a ""GetComponent<rigidbody>"" too ""AddForce(playerCam.forward * throwForce)"", else if the the ""GetMouseButtonDown(1)"" which then states to 
+
+add a "RandomAudio" fucntion to allow audio getting played when anything is done to trigger the audio. Create a ""RandomAudio"" function and inside ""if (audio.isPlaying) return;"" this tells the player the sound getting played when necessary, ""audio.clip = soundToPlay(Random.Range(0, soundToPlay.length));"" helps to make sure theres a log staemnet stating the audio being played, ""audio.play();"" 
+
+The ""OnTriggerEnter"" function is mentioned because we have colliders on the objects, we want to throw some are regular collider others are colliders with a trigger included.
+
+
+After some trial and error, the Code above written will not be used as i will be using a different method to do so!!
+
+We create a script where we want to pick up an object (Box) we make sure the box has a Rigidbody with the set Gravity stated as true is kinematic at false. 
+
+in our Pickup Script We start adding variables to our code such as ""public float throwForce = 600"", ""Vector3 objectPos"", ""float distance", ""public bool canHold = true"", ""public GameObject item"", ""public GameObject tempparent"", ""public bool isHolding = false"". 
+
+We create new functions like ""Void OnMouseDown()"", ""Void OnMouseUp()"", on MouseDown we create an if statement saying that the distance is less than equal to 1f then isHolding is true and we write a ""GetComponent<Rigidbody>"" where we set useGravity = false and detectCollissions = true. In the OnMouseUp function we only need to state that ""isHolding = false""
+
+In our Update function we check if isHolding true or false.
+first we create a script to where the distance will be and we will implement that with this formula ""distance = Vector3.Distance(item.transform.position, tempParent.transform.position)"", then we create an if statement we can tell if the function is working or not. 
+If the distance is less than equal to 1f, then isHolding is false, but if is holding == true then we create a ""getComponent <rigidbody>"" for ""velocity"", ""angularVelocity"" and we equals them to ""Vector3.zero"" and we then mention the SetParent to transform the parent item, then inside that same function we create another if statements telling that once the leftmousebutton (LMB) is clicked ""item.GetComponent<Rigidbody>().AddForce(tempParent.transform.forward * throwForce)"" then ""isHolding = false"", then we create an else formula stating that ""objectPos = item.transform.position"", ""item.transform.SetParent(null)"", ""item.GetComponent<Rigidbody>().useGravity = true"", ""item.transform.position = objectPos""
+
+after when the script is finished on the project files, we make sure the cube (Object you want to pick up) have the script attached to it and add the mesh to the gameobject that we added in our public variables, we add the mesh to the item and the empty gameObject we created 
+
+
+After some testing there was some issues I realised that some place of my codes have been on the wrong place to implement what I needed, I ended up creating a variable for ""item.GetComponent<Rigidbody>()"" due to being repeated too much to I made a function to use ""rb"" besides it. 
+
+in my new code i stated that if the player is holding the box make ""isHolding = false"", use of gravity true ""rb.useGravity = true"", use of kinematic false ""rb.isKinematic = false"". once the player clicks the mouse button to throw the box it uses an force to throw it before hand it would throw it frame by frame and take forever to be finished, with some minor changes we made the forcemode impulsive and its as fast and smooth as it could be, this is how it was done ""rb.AddForce(tempParent.transform.forward * throwForce, ForceMode.Impulse)"". 
+
+
+
+22/2/2022
+
+Audio Visualizer with spectrum data
+
+Tutorial: https://www.youtube.com/watch?v=PzVbaaxgPco
+
+We create a script and we need to first define some class members, for our engine we need an array of floats to hold our spectrum data, then we need a publicly accessible value that could be accessed by anyone who uses it, the value is going to be highly generalized from the spectrum data array.
+
+In our ""Start"" functio we need to initialze out specturm data as a power of two sides, in out ""update"" function we need to populate our array by pulling data from our audio scene listener, we then check if our spectrum has any data and if it’s true we will assign our generalized spectrum value to the first elements of array in our data then x100. 
+
+Next we create another script which is the parent class for all types of syncing manipulation, first we create some variables ""bias"", ""timeStep"", ""timeToBeat"", ""restSmoothTime"", ""m_previousAudioValue"", ""m_audioValue"", ""m_timer"", ""m_isBeat"".
+
+bias: what spectrum value is going to trigger a beat
+timeStep: the minimum interval between each beat
+timeToBeat: how much time before the visualization completes
+restSmoothTime: how fast the object goes to rest after a beat
+m_previousAudioValue & m_audioValue: we can determine that the value went above or below the bias during the current frame thus triggering a beat
+m_timer: to keep track of the timestep interval  
+m_isBeat: sync object is current in a beat state
+
+We going to be using unity's ""Update"" function to use ""onUpdate()"", in ""OnUpdate"" function we assign the ""m_previousAudioValue = m_audioValue"" & ""m_audioValue = AudioSpectrum.spectrumValue"". if the audio went below the bias and the current frame, we check that we our allowed to trigger a beat based on our timeStep rule then we trigger on beat. we do the same formula if the audio went above the bias and the current frame as well. final step is to increment the timeStep timer. 
+
+We create another script where we scale objects based on soundtracks, first thing we need to do is drive AudioSyncer, the we only need to create two ""Vector3"" variables to hold our scale values one for beat and another for rest. 
+
+Our next move is to create an override function on ""OnUpdate"" & ""OnBeat"", in ""OnBeat"" we will spawn a coroutine to go to the beat scale, in ""OnUpdate"" we will check if we are currently in a beat set. 
+
+
+
+01/03/22
+
+Video Player 
+
+Tutorial: https://www.youtube.com/watch?v=aiISib1Mrs4
+
+I created myself a video player that allows any video files to be played throught like a video player would with the functions to be able to play, pause, stop, drag the timeline at any given position of the video and a volume tuner to make it loud or quiet.
+
+first we start by adding a canvas in the scene and we create a play button, Pause button & Stop button, with a two sliders one for tracking the timeline of the video and the other slider for the volume. 
+
+we first start by positioning the buttons and sliders to where they need to be in the HUD, then we create a script named ""Tracker"", we created public variables like AudioSource audio, Slider audioVolume, VideoPlayer video, to use them later on, on void Start we set ""tracking = GetComponent<Slider<()"", later on we then create a ""public void OnPointerDown(PointerEventData a)"" which we state ""slide = true"", on our new function named ""public void OnPointerUp(PointerEventData b)"" we create a float frame to track out each frame in a video player being played so allow the slide to drag where ever the users wants too, ""float frame =(float)tracking.value * (float)video.frameCount"", ""video.frame = (long)frame"", ""slide = false"".
+
+On the Update function we are making a volume slider to make the user change the volume to their liking, by that we create an if statement for once the slider is being slid it would track the value and count the frames to match the audio volume. by doing so we add this ""if(!slide && video.isPlaying)"", ""tracking.value = (float) video.frame / (float)video.frameCount"", then we create another function called ""public void Volume()"" where we link ""audio.vloume = audio.volume.value"" for the slider to know the values of the volume and go by to reduce the decimals in the sound once the slider is dragged by the user. 
+	
+
+Create a game with multiple packages
+
+Zombify
+
+I created a game where it has a function of AIs following you and hurting you, you as a player has weapons that can kill the enemy AI's approaching.
+when the package is installed on the window tool, we open up the FPS Integration Tool then hover overpopulate Project Settings click All and apply. 
+
+Afterwards we open up the "READ ME" pdf that the project pack included and once we follow up on the settings written on the pdf the game mechanics start to run smooth. 
+
+For the second package i found a level scene that can help the player play the game as, first I added box colliders on the mesh which was needed for the player to not fall through the scene, then I baked the meshes so that the enemy AI can be controlled with the scripts given by the package. 
+
+Made some small tweaks to the menu scene to only have one level as playing since there's only one scene in play. 
+
+I ended up changing the manager prefab to where except it being 5 different waves, there’s one huge boss level that has to be completed and respawning has been disabled too.
