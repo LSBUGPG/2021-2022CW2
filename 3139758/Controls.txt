@@ -1,0 +1,5 @@
+WASD/Arrow keys to move
+T to shoot
+Spacebar to attack
+Esc to pause
+Mouse to navigate menus
