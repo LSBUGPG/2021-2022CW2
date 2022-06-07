@@ -1,0 +1,8 @@
+This script is designed to count the ammo that the player has during the game.
+
+Firstly, make a canvas and drag the panel as a child of this object, then drag the AmmoSystem game object in the scene.
+Then make sure all the objects are referenced in the script attached to AmmoSystem. The value of Max Ammo should be the amount of bullets you want the player to have.
+In the Prefab tab, the Bullet Prefab that you can find in the package should be referenced. The next one is the panel that you put in the canvas.
+The last two references are the two states of the images: When the slots have bullets they use the green sprite and when it's empty they use the red sprite.
+
+Now, whenever you press space while in game, 1 bullet will be consumed. When all the sprites are red, the bullets will be reloaded and they will all turn green.

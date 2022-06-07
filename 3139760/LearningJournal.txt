@@ -1,0 +1,14 @@
+	I spent a lot of time making theese packages as they also helped me developing the game for my third year.
+
+	I got a lot of inspiration from youtube tutorials, but I adapted them to my necesities in the game that I'm about to make.
+
+	The one I spent the most time on is the First Person Controller, but I know that this is the one that will come in handy the most in the future, 
+because it's adapted to any First Person game. The Controller has a lot of functions and mechanics for the player, such as jumping, sprinting, crouching,
+a health system, stamina system,zooming with rightlclick, sliding on slopes instead of getting stuck in the air, the ability to put different stepsounds 
+for different materials and the ability to interact with objects and doors. The First Person Controller is fully customizable to the needs of the developer.
+
+	The last 2 packages were focused on doors. One of them has an interactable door that always opens in the opposite direction of the player and closes 
+automaticaly if the player doesn't stay next to the door anymore. The second one is a door that opens only with a passcode, the default code is 1234,
+but it is fully customizable in the Unity Property Editor.
+
+	It was a fun experience making theese packages and I hope I can use them more in the future.
