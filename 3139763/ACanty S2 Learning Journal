@@ -1,0 +1,143 @@
+*S2_ACanty Programming Y2 S2 (21/22) Learning Journal*
+
+Template - Date, Task, Problems, Detailed Solution, Notes
+
+
+08/02/22
+Programming Package 1 - Full Menu System 
+
+Task - Following a tutorial to learn how to program and implement a settings menu as well as a main menu, quit function, level select and pause menu in Unity. 
+I had no prior knowledge of how to create a settings menu, or the unity it entails, so I predicted it would take longer to learn. 
+Having created and having the code examples of the main and pause menus, I was much more confident in the timing for this. 
+
+
+Problems
+
+Unfamiliarity of unity system
+When looking at the initial tutorial I had made the assumption that the UI elements of the tutorial would be included, and so I was unfamiliar with the 'Dropdown', 'Slider' and 'Toggle'
+elements of Unity UI, and was unsure of how to make them. This would not only involve more research into Unity UI (or the code equivalent if this information could not be found),
+it would also take more time from my esimate to familiarize myself with these, and find solutions outside of the tutorial planned. 
+
+In fixing this, I looked through the Unity Documentation, as well as looking closer at the Hierarchy_>Create UI and found what I was looking for. 
+I also compared the setup to the video to ensure what I would begin with was correct, and adjusted the sizing and placement of UI elements. Making these changes in Unity, 
+it did take time from my initial estimate and did overrun in time, but also was a good learning oppourtunity to look into sources and ensure proper setup
+of proposed learning materials before beginning. 
+
+Dropdown Changes/Resizing UI Elements
+
+More of this UI unfamiliarity was shown when resizing the UI elemets to fit with the FullScreen resolution in Game Mode. In order to make them fit, resizing through the rect
+tool reduced the text quality and also didn't lead to consistant sizing, especially with the drop down selection, where the size didn't change, and led to undreadable options. 
+Going through layers and looking at another youtube tutorial, how to fill out options on a dropdown became clear to me, and through trial and error of rezing, looking closer at
+the inspector and scale function of the UI element, I could consistently utilise the new UI feature as I needed to. This was a good remider to utilise trial and error when in the engine, and to look for 
+clearer solutions online, and in using both, and remebering unity fundementals (E.g. Inspector -> Scale), many of these setbacks are resolvable without taking uo too much time. 
+
+Slow Quality changes. 
+
+When watching the tutorial and completing the Quality change script, running the Dropdown selection of 'High, Medium, Low' in playmode, alongside the Player Settings -> Quality menu,
+the updates on the changing of quality was initially very slow. After double checking my scripts and showing a peer, and restarting the change, it sped up immensely, and was much clearer 
+that it was working. From this I learned to try/run my scripts more than once to allow them to fully initate and save so everything updates quickly. 
+
+
+Additional Notes. 
+All other aspects of making the sysem was done quickly and easy as a knew what to do and had reference from previous projects. I also added an information scene in order to explain the package to anyone using it. 
+My infamiliarity was the main cause of problems with this, but the investigation through unity documentation, looking in engine, and online reloved all of these
+without too much time spent on them, but I will have to keep unfamiliarity as a factor when looking at my other packages, my game, and future projects to give myself enough time to prepare.
+Timing/Estimate changes and discussion of other packages outside during class, meant that I finished the full menu system of the initiala 3 hours, but was complete close to my estimate. 
+
+
+
+
+
+
+
+
+
+15/02/22
+Programming Package 2 - UI, Line Renderer Waypoint System (2D) 
+
+Task - Looking closer at line renderer in order to create a point from a player to their goal point. 
+This line updates as they get closer. When they get close enough to their goal, it switches to the next target. 
+This would be useful for a map system and a way to guide player's to their next objective.
+
+Problems
+
+The only major problem I had with this task was the starting point, in which I didn't fully understand the line renderer, and my proposed tutorial did not 
+function the way I wanted it to (It reffered to Waypoint in AI, as opposed to Wayfinding/UI). Knowing this, I looked for other tutorials in addition
+to the Unity Documentation, which was very helpful in allowing me to understand the line renderer. Now, able to grasp the concept, a peer in the class
+was able to go through and solve the problems with me, in order to construct the package. It was well understood and took less than than anticipated, with
+no other major issues then how to begin the process, for which I reached out and researched, explanding my understanding of the area of the Unity engine and programming in general.
+
+Overall, I am very happy with the accessibility and speed of this project, coming in under my estimations, with no issues that reduced my ability to work on this. 
+With the help of Ramone, I now understand how to replicate and add to this in the future, and how users of the package can achieve this. 
+(Eg, next point appears after interaction with Point A)
+One important lesson from this is to have a better understanding and look over of the tutorial I plan to use, and to better utilize Unity documentation 
+to see what I can create. 
+
+
+
+
+
+
+22/02/22
+Programming Package 3 - Scroll Rect (with Toggle)
+
+Task - Improve on an exisitnig tutorial and make it closer to game ready, with additional toggle functionality.
+
+Problems 
+
+While this project was rather straight forward since I had created aspects of it before, which did not work well, based on canvas sizing etc. I used a new tutorial 
+and got through it quicker than expected, but was not without an issue that impacted progress Part-way through. When the scroll function was not properly
+working, I looked over the formatting of my script and over the tutorial and scene setup to see if I missed anything. After being stuck for longer and unable to find anything,
+I asked for help and understood that the issue in my script arose from the spacing between ! and =, shown in the tutorial, now learning that != is its own function
+of 'Not Equal to', which was useful to know for future reference. Knowing this, the fix and completion of the main scroll function was complete very quickly.
+
+Next, I wanted to also add a toggle function as it would be helpful for actual devleopment, as the scroll function is not commonly used all the time in a game.
+I, however couod not exactly remember how to do this, and wanted to avoid impacting other scripts by making my best guess,
+but looking over my old scripts and the unity documentation to remind myself helped solved this quickly, and the package was complete. 
+
+Additionally, this is when problems with the Plastic/Unity Collaberation and lost material began to appear as backup functions changed, however, backups
+on my USB drive and home laptop helped prevent lost material myself. 
+
+
+
+
+
+
+
+4/03/22
+Programming Package 4 - Quiz System (Multiple Choice)
+
+
+Task - Create a multiple choice quiz system using Unity UI and Canvas System. With additional functionality to adjust question numbers, as well as wording on questions
+and answers in engine.
+
+Problems
+
+As I have created dialogue systems and a slightly varied system like this, I had some experience with the UI and some of the processes involved.
+This is why I came into a very little amount of problems, but the one I did have was why the assigned answers were not registering as correct in my comments through
+(Debug.Log)on the console. After checking this over and looking through each panel assigned to the references, I looked at the script and was unable to find anything
+that could lead to this information being wrong. However, having completed a similar project, and using a tutorial, I looked over my project as well as rewatching the assignment
+aspects, and realised the problem. Being used to assigning elements 0-[Number in array], beggining with 0, I assigned my first answer (out of 2) as 0, instead of 1.
+This, however is not how the answers were meant to be assigned, beginning from 1 instead. Once I changed the answers to 1-2 depending on which is correct, the system worked perfectly.
+
+I assumed this would take longer than it did, having problems with a similar system last year, however my experience and the mistakes taken last time helped me quicly find solutions and finish this well. 
+
+
+14/03/22-04/04/22
+Game Setup and Implementation 
+
+
+Task - Create a 2D Unity Project, add and ensure packages work together. Set up as a game.
+
+Problems
+
+My problems for this stage of the project were minimal, but with one issue I faced being the UI setup and relinking of assets to their OnClickEvent() counterparts in a 
+new project. Also, ensuring that scene setup for the menus (Using Unity Scene Management) corresponded with the int OnClickEvent assigned to the individual buttons. 
+This was more time consuming than any real issue, as is reflected in my time estimate altering for this. Testing each aspect in builds and assigning mixers to impact sound also came into play
+here, but it was not so much a problem to overcome, but a reminder of what I already knew, similarly with making assets and formulating them into a small game.
+
+One issue I did have, however was related to the line renderer, and what it does when it reaches it's first point. I aimed for it to open the quiz system and 
+ask the player varying numbers of questions as part of the main game mechanic. When trying to complete this function, errors in the form of the QuizManager not registering 
+any changes or updating the questions moving from place to place. To fix this, I reached out to Ramone for support on this, and we worked to create a new Quiz Manager for each target point 
+from the line renderer, Quiz Manager Point A and Quiz Manager Point B, and assigned each question set accordingly, which fixed the problem and worked well from a design point of view, in keeping
+the questions and their location in control. This was solved quickly. Now in adjusting movement speed and assigning content, the game is ready to play. 
