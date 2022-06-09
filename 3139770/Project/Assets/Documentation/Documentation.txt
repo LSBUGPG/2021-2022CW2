@@ -1,0 +1,14 @@
+To make use of this package:
+
+-In this package we will make use of all the packages previously created and make a small game
+
+-To make use of this package associate your knowledge of the previous packages
+
+-When you play the game move around with the keys WASD
+
+-Make sure to not bump into enemies and loose health otherwise the player will die and restart
+
+-Use the left-click on the mouse to shoot and aim to the green cubes upon the player, every green cube hit is +1 point,
+every red cube hit is -1 point on the score
+
+-Try to make the best score without getting killed by the enemies and enjoy the game!
