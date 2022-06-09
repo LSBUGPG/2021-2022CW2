@@ -1,0 +1,1 @@
+Drag the script shader Handler onto the main camera then drag the material called “pixlation” into variable called effect material.

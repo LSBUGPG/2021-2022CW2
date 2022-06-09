@@ -1,0 +1,5 @@
+For this attach the Game object as a child of the main camera object.when expanded further you’ll see an object named gun tip with 4 variable to fill.
+The first is watch layers you want to be able to grapple onto simply chosen what layer you want 
+The second is called gun tip, simply drag the same object with this name into that slot 
+The third is called camera drag in the main camera object 
+The fourth is called player for this drag in your player object,
