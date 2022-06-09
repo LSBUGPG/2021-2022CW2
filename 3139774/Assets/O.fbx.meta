@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 44c01f780766c0b4388bf1225deb4702
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn1
+    second: {fileID: 2100000, guid: eac756c5957db5a48a322ed779566a6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: bb12f01644f8c3e44b6038ec5d4e2e8b, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: O
+    second: {fileID: 2800000, guid: 706593e906c201b489ddefc9f50648e9, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Hips' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: O(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere1
+      parentName: O(Clone)
+      position: {x: -0, y: 0.03402099, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.3737383, y: 1.3737383, z: 1.3737383}
+    - name: pCone1
+      parentName: O(Clone)
+      position: {x: 0.0024064747, y: 0.04779196, z: -0.0028010462}
+      rotation: {x: 0, y: -0, z: -0.19443035, w: 0.9809163}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone2
+      parentName: O(Clone)
+      position: {x: 0.0024064747, y: 0.04779196, z: 0.002641223}
+      rotation: {x: 0, y: -0, z: -0.19443035, w: 0.9809163}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone4
+      parentName: O(Clone)
+      position: {x: -0.010375891, y: 0.035484374, z: -0.01450985}
+      rotation: {x: -0.01963878, y: -0.013750069, z: 0.57337934, w: 0.8189392}
+      scale: {x: 0.75054485, y: 0.75054485, z: 0.75054485}
+    - name: pCylinder1
+      parentName: O(Clone)
+      position: {x: 0.008506828, y: 0.02988722, z: -0.016739102}
+      rotation: {x: 0, y: 0, z: 0.60989016, w: 0.79248595}
+      scale: {x: 0.28881234, y: 1.3913854, z: 0.2670121}
+    - name: pCylinder2
+      parentName: O(Clone)
+      position: {x: -0.0017073695, y: 0.013974102, z: 0.0040554022}
+      rotation: {x: 0, y: -0, z: -0.07155287, w: 0.9974368}
+      scale: {x: 0.21152486, y: 1.0190444, z: 0.19555844}
+    - name: pCylinder3
+      parentName: O(Clone)
+      position: {x: -0.0017073695, y: 0.013974102, z: -0.0046774223}
+      rotation: {x: 0, y: -0, z: -0.07155287, w: 0.9974368}
+      scale: {x: 0.21152486, y: 1.0190444, z: 0.19555844}
+    - name: pCube1
+      parentName: O(Clone)
+      position: {x: -0.007074634, y: 0.003202971, z: -0.0051616924}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0865031, y: 0.2562911, z: 0.6037385}
+    - name: pCube2
+      parentName: O(Clone)
+      position: {x: -0.007074634, y: 0.003202971, z: 0.0034068772}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0865031, y: 0.2562911, z: 0.6037385}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
