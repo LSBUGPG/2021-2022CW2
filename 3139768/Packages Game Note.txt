@@ -1,0 +1,19 @@
+Oliver Mota
+
+My packages game is an escape room style mini game.
+The player must work out the codes for the locks which will lead them to the final code to get out the room.
+As a full length game there would be more levels and Mechanics.
+
+This game makes use of multiple packages:
+
+My Packages:
+- Code Lock
+- Object Highlight
+
+Other Packages:
+- First Person Character Controller
+(https://assetstore.unity.com/packages/3d/characters/modular-first-person-controller-189884#description)
+
+
+
+(I've left the excel file as its easier to read the table than the PDF)
