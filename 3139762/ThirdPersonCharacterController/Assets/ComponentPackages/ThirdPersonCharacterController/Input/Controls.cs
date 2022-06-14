@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/ComponentPackages/Input/Controls.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/ComponentPackages/ThirdPersonCharacterController/Input/Controls.inputactions'
 
 using System;
 using System.Collections;
