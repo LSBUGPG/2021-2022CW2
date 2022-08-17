@@ -1,0 +1,11 @@
+https://github.com/alazouras?tab=repositories
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Link to Github - Amelia Lazouras (Github under alazouras if link doesn't work)
+
+List of tutorials for this submission:
+
+Menu-System-Y2S2
+NPC-Scripts-tutorial-Y2S2
+Dialogue-tutorial-Y2S2
+Character-Controller-tutorial-Y2S2
